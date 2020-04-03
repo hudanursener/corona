@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DunyaRapor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toplam Vaka:"
+        android:textColor="#000000"
+        android:textSize="25dp">
+    </TextView>
+    <TextView
+        android:id="@+id/total_cases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#C50C0C"
+        android:textSize="20dp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Toplam Ölüm:"
+        android:textSize="25dp">
+    </TextView>
+    <TextView
+        android:id="@+id/total_deaths"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#C50C0C"
+        android:textSize="20dp"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toplam Tedavi Edilen:"
+        android:textColor="#000000"
+        android:textSize="25dp">
+    </TextView>
+    <TextView
+        android:id="@+id/total_recovered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#C50C0C"
+        android:textSize="20dp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yeni Vaka:"
+        android:textColor="#000000"
+        android:textSize="25dp">
+    </TextView>
+    <TextView
+        android:id="@+id/new_cases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#C50C0C"
+        android:textSize="20dp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toplam Ölümler:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/new_deaths"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#C50C0C"
+        android:textSize="20dp"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Alınan İstatistik Zamanı:"
+        android:textSize="25dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/statistic_taken_at"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#C50C0C"
+        android:textSize="20dp">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/EtkilenenUlkeButon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Etkilenen Ülkeler Listesi"
+            android:layout_alignParentBottom="true"
+            android:textSize="18dp"
+            android:background="#ADB3B0">
+
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>
