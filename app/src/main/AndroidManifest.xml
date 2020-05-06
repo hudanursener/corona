@@ -11,8 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetayGecis"></activity>
-        <activity android:name=".EtkilenenUlkeDetay" />
+        <activity android:name=".DetayUlke"></activity>
         <activity android:name=".EtkilenenUlke" />
         <activity android:name=".DunyaRapor" />
         <activity android:name=".MainActivity">

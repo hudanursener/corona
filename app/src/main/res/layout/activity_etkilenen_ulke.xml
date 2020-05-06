@@ -8,14 +8,12 @@
 
 
    <ListView
+       android:background="@drawable/resimbc"
        android:id="@+id/listView"
        android:layout_width="match_parent"
        android:layout_height="match_parent">
 
    </ListView>
 
-<TextView
-    android:id="@+id/tv"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"></TextView>
+
 </RelativeLayout>

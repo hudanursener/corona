@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,DunyaRapor.class);
                 startActivity(intent);
             }
-        },9000);
+        },7000);
 
 
 

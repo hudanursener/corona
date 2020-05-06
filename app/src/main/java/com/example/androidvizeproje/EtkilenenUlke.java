@@ -34,41 +34,29 @@ public class EtkilenenUlke extends AppCompatActivity implements EtkilenenUlkeReq
         EtkilenenUlkeReq request = new EtkilenenUlkeReq(this);
         request.execute();
 
-
     }
-
-
 
     @Override
     public void onRequestDone(final String result) {
-
-
         Gson gson = new Gson();
         final EtkilenenUlkeModel model = gson.fromJson(result,EtkilenenUlkeModel.class);
 
-
         final List<String> values = new ArrayList<>();
 
-        for (int i =0; i< model.affected_countries.length ;i++){
+        for (int i =1; i< model.affected_countries.length ;i++){
             values.add(model.affected_countries[i]);
-
         }
-
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1, values);
 
         listView.setAdapter(arrayAdapter);
 
-
-
-
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()  {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id)  {
 
-                Intent intent = new Intent(EtkilenenUlke.this,DetayGecis.class);
-
+                Intent intent = new Intent(EtkilenenUlke.this,DetayUlke.class);
+                intent.putExtra("ulkeAdi",listView.getItemAtPosition(position).toString());
                 startActivity(intent);
             }
         });

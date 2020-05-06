@@ -63,7 +63,5 @@ public class DunyaRapor extends AppCompatActivity implements Request.ReqListener
     new_cases.setText(model.new_cases);
     new_deaths.setText(model.new_deaths);
     statistic_taken_at.setText(model.statistic_taken_at);
-
-
     }
 }

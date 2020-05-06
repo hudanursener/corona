@@ -2,83 +2,63 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DunyaRapor"
+    android:orientation="vertical"
+    tools:context=".DetayUlke"
     android:background="@drawable/resimbc">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Toplam Vaka:"
-            android:textColor="#ffffff"
-            android:textSize="35dp"></TextView>
-
-        <TextView
+        android:layout_marginTop="25dp">
+    <TextView
+        android:id="@+id/ulkeAdi"
         android:gravity="center"
-        android:id="@+id/total_cases"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
-        android:textSize="45dp">
+        android:textSize="40dp">
     </TextView>
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="50dp">
-
-    </View>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Toplam Tedavi Edilen:"
+        android:text="Vaka Sayısı:"
         android:textColor="#ffffff"
         android:textSize="25dp">
     </TextView>
     <TextView
-        android:id="@+id/total_recovered"
+        android:id="@+id/vakaSayisi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:textSize="25dp">
     </TextView>
-
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Ölüm Sayısı:"
         android:textColor="#ffffff"
-        android:text="Toplam Ölüm:"
         android:textSize="25dp">
     </TextView>
     <TextView
-        android:id="@+id/total_deaths"
+        android:id="@+id/olumSayisi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
-        android:textSize="25dp"
-        >
+        android:textSize="25dp">
     </TextView>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Yeni Vaka:"
+        android:text="Toplam İyileşen:"
         android:textColor="#ffffff"
         android:textSize="25dp">
     </TextView>
     <TextView
-        android:id="@+id/new_cases"
+        android:id="@+id/toplamIyilesen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
@@ -89,47 +69,75 @@
         android:layout_height="wrap_content"
         android:text="Yeni Ölümler:"
         android:textColor="#ffffff"
-        android:textSize="25dp"
-        >
+        android:textSize="25dp">
     </TextView>
     <TextView
-        android:id="@+id/new_deaths"
+        android:id="@+id/yeniOlumler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
-        android:textSize="25dp"
-        >
+        android:textSize="25dp">
     </TextView>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Yeni Vakalar:"
         android:textColor="#ffffff"
-        android:text="Alınan İstatistik Zamanı:"
         android:textSize="25dp">
-    </TextView>0
+    </TextView>
 
     <TextView
-        android:id="@+id/statistic_taken_at"
+        android:id="@+id/yeniVakalar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25dp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kritik Vaka:"
+        android:textColor="#ffffff"
+        android:textSize="25dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/kritikVaka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25dp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aktif Vakalar:"
+        android:textColor="#ffffff"
+        android:textSize="25dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/aktifVakalar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25dp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 milyon kişi başına toplam vaka:"
+        android:textColor="#ffffff"
+        android:textSize="25dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/birMVaka"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:textSize="25dp">
     </TextView>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/EtkilenenUlkeButon"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Etkilenen Ülkeler Listesi"
-            android:layout_alignParentBottom="true"
-            android:textSize="20dp"
-            android:textColor="#ffffff"
-            android:background="#37657C">
-
-        </Button>
-    </RelativeLayout>
 
 </LinearLayout>
